@@ -84,7 +84,7 @@ public class AppointVix extends TelegramLongPollingBot {
             } else if (message.equals("/help")) {
                 sendMsg(chatId, "Enter PinCode/ZipCode to get notification for the availability of slots in that area. " +
                         "In case of any problem type /exit followed by /start.\n\n"+
-                        "If you want you can raise the issue at : https://github.com/Prankurtiwari/covid-telegrambot");
+                        "Raise the issue at : https://github.com/Prankurtiwari/covid-telegrambot");
             } else if (pinValidate(message) ) {
                 UserInput input = new UserInput(chatId, message);
                 user.addUser(input);
