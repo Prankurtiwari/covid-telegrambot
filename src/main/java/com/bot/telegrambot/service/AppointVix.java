@@ -129,7 +129,7 @@ public class AppointVix extends TelegramLongPollingBot {
             } else {
                 sendMsg(chatId, "You have not entered the valid Indian pinCode. Please enter 6 digit valid Indian PinCode/ZipCode to use the service.");
             }
-        } catch (NullPointerException exception) {
+        } catch (Exception exception) {
             sendMsg(update.getMessage().getChatId(), "Something is INCORRECT. " +
                     "Please enter 6 digit valid Indian PinCode/ZipCode to use the service");
         }
